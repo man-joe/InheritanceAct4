@@ -19,17 +19,18 @@ public class Main {
         b2.setPrice(21.30);
         System.out.println(b2.toString());
 
-        Product p = new Product();
-        p.setCode("code1");
-        p.setDescription("product description");
-        p.setPrice(1.00);
-        System.out.println(p.toString());
+//        Product p = new Product(); // No longer works as Product is now abstract
+//        p.setCode("code1");
+//        p.setDescription("product description");
+//        p.setPrice(1.00);
+//        System.out.println(p.toString());
 
         // Testing equals method...
-        if(p.equals("code")) // should fail
-            System.out.println("Product 1 passes test");
-        else
-            System.out.println("Product 1 fails test");
+        //p is now abstract. Can't create instances of abstract classes
+//        if(p.equals("code")) // should fail
+//            System.out.println("Product 1 passes test");
+//        else
+//            System.out.println("Product 1 fails test");
 
         if(b.equals(b2)) // should fail
             System.out.println("Book 1 is equal to Book 2");
@@ -40,6 +41,11 @@ public class Main {
             System.out.println("Same Programmer!");
         else
             System.out.println("Not the same Programmer!");
+
+        System.out.println("\nProduct class is now abstract. It can't be instantiated but can still use its methods");
+        System.out.println("Changing price of Book 2...");
+        b2.setPrice(11.11);
+        System.out.println(b2.toString());
 
     }
 }

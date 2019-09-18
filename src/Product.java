@@ -1,6 +1,6 @@
 import java.text.NumberFormat;
 
-public class Product {
+public abstract class Product {
 
     private String code;
     private String description;
@@ -45,7 +45,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Code:                " + code + "\n" +
+        return "Code:               " + code + "\n" +
                 "Description:        " + description + "\n" +
                 "Price:              " + this.getFormattedPrice(price) + "\n";
     }

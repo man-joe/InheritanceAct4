@@ -1,1 +1,0 @@
-# Inheritance Activity #1 
