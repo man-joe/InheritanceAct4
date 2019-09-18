@@ -33,4 +33,9 @@ public class Software extends Product {
         this.platform = platform;
         this.os = os;
     }
+
+    @Override
+    public boolean equals(Object programmer) {
+        return this.programmer.equals((String) programmer) ? true : false;
+    }
 }

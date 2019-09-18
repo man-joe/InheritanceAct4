@@ -60,4 +60,9 @@ public class Product {
     public static int getCount() {
         return count;
     }
+
+    @Override
+    public boolean equals(Object code){
+        return this.code.equals((String) code) ? true : false;
+    }
 }

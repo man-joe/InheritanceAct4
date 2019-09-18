@@ -24,4 +24,12 @@ public class Book extends Product {
         this.author = author;
         this.pages = pages;
     }
+
+    @Override
+    public boolean equals(Object book) {
+        Book tmp = (Book) book;
+        if(this.author.equals(tmp.getAuthor()) && (this.pages == tmp.getPages()))
+            return true;
+        return false;
+    }
 }
